@@ -50,7 +50,7 @@ export default function AddRegion() {
   const classes = useStyles();
 
   const [selectedBulkUpload, setSelectedBulkUpload] = useState(null);
-  const { loggedInUser, setLoggedInUser } = useContext(UserContext);
+  const { loggedInUser } = useContext(UserContext);
   const [isEditing, setIsEditing] = useState(false);
   const {employeeData, getBranchList} = useContext(EmployeeContext);
   const branchList = employeeData ? employeeData.branchList : [];
