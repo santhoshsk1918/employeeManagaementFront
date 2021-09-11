@@ -129,7 +129,7 @@ export default function Home() {
     let { id_token } = response.tokenObj;
     let baseUrl = process.env.REACT_APP_BASE_URL;
     axios({
-      url: `${baseUrl}/users/googleLogin`,
+      url: `${baseUrl}/users/googleLogin/`,
       method: "POST",
       data: { googleToken: id_token },
       headers: {
