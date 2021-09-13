@@ -145,7 +145,7 @@ export default function Home() {
   };
 
   const onErrorResponseGoogle = (response) => {
-    alert("Google Login Error");
+    // alert("Google Login Error");
   };
 
   return (
@@ -237,13 +237,13 @@ export default function Home() {
                   </Button>
 
                   <div className={classes.splitter} />
-                  <GoogleLogin
+                  {/* <GoogleLogin
                     clientId={clientId}
                     buttonText="Login with Google"
                     onSuccess={onResponseGoogle}
                     onFailure={onErrorResponseGoogle}
                     cookiePolicy={"single_host_origin"}
-                  />
+                  /> */}
                 </Grid>
               </form>
             </Grid>
